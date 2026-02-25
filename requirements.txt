@@ -1,9 +1,9 @@
-# 基础依赖
-streamlit>=1.30.0
-Pillow>=10.0.0
-numpy>=1.24.0
+# 适配 Python 3.13 的核心依赖
+streamlit>=1.36.0
+numpy==1.26.4  # 唯一支持 Python 3.13 的稳定版
+Pillow>=10.3.0
 
-# PyTorch 适配 Streamlit Cloud（Linux/ARM64）
-torch==2.1.0+cpu
-torchvision==0.16.0+cpu
+# PyTorch + TorchVision 适配 Python 3.13（最新 CPU 版）
+torch==2.9.0+cpu
+torchvision==0.24.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
